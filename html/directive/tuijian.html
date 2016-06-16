@@ -1,0 +1,39 @@
+<div id="tuijian" ng-controller="tuijian">
+<div class="head">
+<div><a href="#/yuedu"><img src="jpg/png/2.png" alt=""></a></div>
+<div>每日订阅推荐</div>
+<span><a href=""><img src="jpg/png/3.png" alt=""></a></span>
+</div>
+<div class="tu">
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="jpg/tuijian/1.png" alt=""></div>
+    <div class="swiper-slide"><img src="jpg/tuijian/2.png" alt=""></div>
+    <div class="swiper-slide"><img src="jpg/tuijian/3.png" alt=""></div>
+    <div class="swiper-slide"><img src="jpg/tuijian/4.png" alt=""></div>
+    </div>
+   <div class="swiper-pagination"></div>
+  
+</div>
+
+</div>
+<div class="tul">
+<ul>
+	<li ng-repeat="v in list">
+      <div class="tu-top">
+   <span class="left"><img ng-src={{v.src}} alt=""></span>
+   <div class="center">
+  <h3 class="top">{{v.h1}}</h3>
+  <h6 class="bottom">{{v.h3}}</h6>
+   </div>
+   <span class="right"></span>
+      </div>
+      <div class="tu-bottom">{{v.wenzhang}}</div>
+	</li>
+
+</ul>
+
+</div>
+
+
+</div>
