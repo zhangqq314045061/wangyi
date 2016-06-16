@@ -1,0 +1,51 @@
+<div class="wodeding" ng-controller="wodeding">
+	<div class="head">
+		<div><a href="#/yuedu" class="xiao" ng-class="{xiao:title=='推荐阅读'}" ng-click="title='推荐阅读'">推荐阅读</a></div>
+		<div><a href="#/wodeding" ng-class="{xiao:title=='我的订阅'}" ng-click="title='我的订阅'">我的订阅</a></div>
+		<span class="icon iconfont"><a href="#/tuijian">&#xe628;</a></span>
+
+	</div>
+	<div class="o">
+	<div class="ol">
+  <a href="#/tuijian"></a>
+     <span class="loi"><img src="jpg/tuijian/5.png" alt=""></span>
+     <span class="center">每日订阅推荐</span>
+     <span class="right"></span>
+	</div>
+	 <div class="ul">
+   <ul>
+   	<li ng-repeat="v in list">
+<!--    	  <span class="loi"><img src="jpg/tuijian/a1.jpg" alt=""></span>
+     <span class="cer">
+        <h3>好奇心日报</h3>
+        <div class="dc">SNH48被AKB48移除，危机这么..</div>
+     </span>
+      <span class="right"></span> -->
+
+        <span class="loi"><img src={{v.src}} alt=""></span>
+     <span class="cer">
+        <h3>{{v.h1}}</h3>
+        <div class="dc">{{v.h3}}</div>
+     </span>
+      <span class="right"></span>
+
+
+   	</li>
+   	<li></li>
+   	<li></li>
+   	<li></li>
+   	<li></li>
+   	<li></li>
+   	<li></li>
+   	<li></li>
+   	<li></li>
+   	<li></li>
+   </ul>
+
+
+	</div>
+    </div>
+
+
+
+</div>
